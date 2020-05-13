@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment__generic_dialog"
+    app:startDestination="@+id/fragment__inner_dialog">
+    <dialog
+        android:id="@id/fragment__inner_dialog"
+        android:name="se.ingenuity.samples.feature.common.app.GenericDialogFragment"
+        android:label="@string/app_name">
+
+        <argument
+            android:name="onPositiveButtonEventKey"
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+</navigation>
