@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="se.ingenuity.samples.feature.quiz.QuizViewModel" />
+    </data>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        currentItem="@={viewModel.currentPosition}"
+        itemBinding="@{viewModel.pagerBinding}"
+        items="@{viewModel.quizzes}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+</layout>
