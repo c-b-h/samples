@@ -1,11 +1,29 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light" />
+
+    <style name="TextAppearance.AppTheme" parent="">
+        <item name="android:textSize">24sp</item>
     </style>
 
+    <style name="TextAppearance.AppTheme.Regular">
+        <item name="android:fontFamily">@font/weird_font</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Italic">
+        <item name="android:fontFamily">@font/weird_font</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Bold">
+        <item name="android:fontFamily">@font/weird_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.BoldItalic">
+        <item name="android:fontFamily">@font/weird_font</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
 </resources>
